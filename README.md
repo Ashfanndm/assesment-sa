@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Interviews @ Avantrio
+======================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey there!
 
-## Available Scripts
+Congratulations in making to the next round.  
+Please keep in mind
+- code quality matters
+- think for sometime before you jump into the code, a bit of preperation would save you a lot of time later
+- there will not be a time for refactoring, so write your best code
+- given priority to implementing the design. We are looking for great frontend developers that understand our UX paradigm
 
-In the project directory, you can run:
+God speed!
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Task
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Your task is to implement a frontend app using React.js for the following specification.
 
-### `npm test`
+1. You must only use React.js for implementing the web app with the following limitations.
+- API calls - axios or similar
+- State management - redux
+- Routing - react-router
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. App consists of 2 pages
+   **Login page** - User should be able to login using a username and a password
+   **Dashboard page** - The design for the dashboard is given in the attached zip file
 
-### `npm run build`
+3. First task is to implement the 2 above pages. You can use any supporting CSS libraries.
+- For the login page, you are free to implement any design.
+- For the dashboard page, you must make it as much as similar to the given design set. The design PDF describes the intended actions and UI changes for each action as well.
+  **Please note that we will be testing your ability to convert complex designs to HTML/CSS with responsive structures from the following. Moreover, we will test your technical competency in CSS.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Second task is to connect the web app to the given demo backend. The endpoint for the backend is available from the postman link below  
+   [https://www.getpostman.com/collections/9550beb3675e31c11242](https://www.getpostman.com/collections/9550beb3675e31c11242)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. You need to connect to the following 3 API endpoints,  
+   `/api/user/login` - to authenticate credentials and obtain an auth token  
+   `/api/users` - to retrieve the list of users  
+   `/api/user/<user id>/logs` - to retrieve the user logs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. User list must be shown in the designated area in the screen.
 
-### `npm run eject`
+7. On selecting a user, the logs must be retrieved from the API and shown in the designated area in the design.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
