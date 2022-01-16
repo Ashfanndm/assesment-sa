@@ -1,5 +1,6 @@
 import React from "react";
 import {TopHeader} from "./Dashboard/topHeader";
+import StaffDetails from "./Dashboard/StaffDetails";
 
 export const Home = () => {
     return (
@@ -19,121 +20,8 @@ export const Home = () => {
                 padding: "15px",
                 borderRadius: "10px"
             }}>
+                <StaffDetails/>
 
-                <div style={{
-                    display: "flex",
-                    position: "absolute",
-                    left: "0",
-                    marginLeft: "20px",
-                    color: "red"
-                }}>
-                    <h3>Staff</h3>
-                </div>
-                <div style={{
-                    display: "flex",
-                    position: "absolute",
-                    right: "0",
-                    marginRight: "20px",
-                    color: "#e2e2e2"
-                }}>
-                    <h3>Employee</h3>
-                </div>
-                <hr style={{marginTop: "40px"}}/>
-
-                <div style={{
-                    width: "220px", height: "40px", border: "solid",
-                    borderRadius: "5px", padding: "5px", borderColor: "#e2e2e2",
-                    marginBottom: "10px"
-                }}>
-                    <div style={{
-                        width: "20px", height: "20px", background: "pink",
-                        borderRadius: "20px", position: "absolute"
-                    }}>
-                        <p style={{
-                            marginLeft: "7px", color: "white",
-                            marginTop: "-3px"
-                        }}>J</p>
-                    </div>
-                    <p style={{marginLeft: "35px"}}>Jaison Burnatte</p>
-                    <img style={{
-                        position: "absolute",
-                        right: "0",
-                        marginRight: "25px",
-                        marginTop: "-35px"
-                    }}
-                         src={require('../assets/Group 566.png')}/>
-                </div>
-
-                <div style={{
-                    width: "220px", height: "40px", border: "solid",
-                    borderRadius: "5px", padding: "5px", borderColor: "#e2e2e2",
-                    marginBottom: "10px"
-                }}>
-                    <div style={{
-                        width: "20px", height: "20px", background: "purple",
-                        borderRadius: "20px", position: "absolute"
-                    }}>
-                        <p style={{
-                            marginLeft: "5px", color: "white",
-                            marginTop: "-3px"
-                        }}>A</p>
-                    </div>
-                    <p style={{marginLeft: "35px"}}>Ali Akbhar</p>
-                    <img style={{
-                        position: "absolute",
-                        right: "0",
-                        marginRight: "25px",
-                        marginTop: "-35px"
-                    }}
-                         src={require('../assets/Group 566.png')}/>
-                </div>
-
-                <div style={{
-                    width: "220px", height: "40px", border: "solid",
-                    borderRadius: "5px", padding: "5px", borderColor: "#e2e2e2",
-                    marginBottom: "10px"
-                }}>
-                    <div style={{
-                        width: "20px", height: "20px", background: "dodgerblue",
-                        borderRadius: "20px", position: "absolute"
-                    }}>
-                        <p style={{
-                            marginLeft: "5px", color: "white",
-                            marginTop: "-3px"
-                        }}>C</p>
-                    </div>
-                    <p style={{marginLeft: "35px"}}>Clifford Shan</p>
-                    <img style={{
-                        position: "absolute",
-                        right: "0",
-                        marginRight: "25px",
-                        marginTop: "-35px"
-                    }}
-                         src={require('../assets/Group 566.png')}/>
-                </div>
-
-                <div style={{
-                    width: "220px", height: "40px", border: "solid",
-                    borderRadius: "5px", padding: "5px", borderColor: "#e2e2e2"
-                }}>
-                    <div style={{
-                        width: "20px", height: "20px", background: "lightgreen",
-                        borderRadius: "20px", position: "absolute"
-                    }}>
-                        <p style={{
-                            marginLeft: "3px", color: "white",
-                            marginTop: "-3px"
-                        }}>M</p>
-                    </div>
-                    <p style={{marginLeft: "35px"}}>Mickey Mouse</p>
-                    <img style={{
-                        position: "absolute",
-                        right: "0",
-                        marginRight: "25px",
-                        marginTop: "-35px"
-                    }}
-                         src={require('../assets/Group 566.png')}/>
-                </div>
             </div>
 
             <div style={{
@@ -180,7 +68,7 @@ export const Home = () => {
                     marginRight: "20px",
                     color: "#e2e2e2"
                 }}>
-                    <h7>Alert</h7>
+                    <h5>Alert</h5>
                 </div>
                 <div style={{
                     display: "flex",
@@ -189,7 +77,7 @@ export const Home = () => {
                     marginRight: "70px",
                     color: "#e2e2e2",
                 }}>
-                    <h7>Message</h7>
+                    <h5>Message</h5>
                 </div>
                 <div style={{
                     display: "flex",
@@ -198,7 +86,7 @@ export const Home = () => {
                     marginRight: "160px",
                     color: "#e2e2e2"
                 }}>
-                    <h7>Location</h7>
+                    <h5>Location</h5>
                 </div>
                 <div style={{
                     display: "flex",
@@ -207,7 +95,7 @@ export const Home = () => {
                     marginRight: "250px",
                     color: "red"
                 }}>
-                    <h7>All</h7>
+                    <h5>All</h5>
                 </div>
                 <div style={{
                     display: "flex",
@@ -219,7 +107,7 @@ export const Home = () => {
                     <p>(Jaison Brunette)</p>
                 </div>
                 <hr style={{marginTop: "40px"}}/>
-                <div style={{marginBottom:"50px"}}>
+                <div style={{marginBottom: "50px"}}>
                     <div style={{
                         display: "flex",
                         position: "absolute",
@@ -227,7 +115,7 @@ export const Home = () => {
                         marginLeft: "50px",
                         color: "black"
                     }}>
-                        <h7>Date</h7>
+                        <p>Date</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -236,7 +124,7 @@ export const Home = () => {
                         marginLeft: "160px",
                         color: "black",
                     }}>
-                        <h7>Alert View</h7>
+                        <p>Alert View</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -245,7 +133,7 @@ export const Home = () => {
                         marginLeft: "260px",
                         color: "black"
                     }}>
-                        <h7>Time</h7>
+                        <p>Time</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -254,11 +142,13 @@ export const Home = () => {
                         marginLeft: "360px",
                         color: "black"
                     }}>
-                        <h7>Location</h7>
+                        <p>Location</p>
                     </div>
                 </div>
-                <div style={{marginBottom:"10px", border:"solid", height:"35px"
-                    , borderRadius:"6px", borderColor:"#b8b6b6"}}>
+                <div style={{
+                    marginBottom: "10px", border: "solid", height: "35px"
+                    , borderRadius: "6px", borderColor: "#b8b6b6"
+                }}>
                     <div style={{
                         display: "flex",
                         position: "absolute",
@@ -266,7 +156,7 @@ export const Home = () => {
                         marginLeft: "50px",
                         color: "black"
                     }}>
-                        <h7>12/may/2020</h7>
+                        <p>12/may/2020</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -275,7 +165,7 @@ export const Home = () => {
                         marginLeft: "160px",
                         color: "black"
                     }}>
-                        <h7>on</h7>
+                        <p>on</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -284,7 +174,7 @@ export const Home = () => {
                         marginLeft: "260px",
                         color: "black"
                     }}>
-                        <h7>03:34:04pm</h7>
+                        <p>03:34:04pm</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -293,11 +183,13 @@ export const Home = () => {
                         marginLeft: "360px",
                         color: "dodgerblue"
                     }}>
-                        <h7>Live Map</h7>
+                        <p>Live Map</p>
                     </div>
                 </div>
-                <div style={{marginBottom:"10px", border:"solid", height:"35px"
-                    , borderRadius:"6px", borderColor:"#b8b6b6"}}>
+                <div style={{
+                    marginBottom: "10px", border: "solid", height: "35px"
+                    , borderRadius: "6px", borderColor: "#b8b6b6"
+                }}>
                     <div style={{
                         display: "flex",
                         position: "absolute",
@@ -305,7 +197,7 @@ export const Home = () => {
                         marginLeft: "50px",
                         color: "black"
                     }}>
-                        <h7>12/may/2020</h7>
+                        <p>12/may/2020</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -314,7 +206,7 @@ export const Home = () => {
                         marginLeft: "160px",
                         color: "black"
                     }}>
-                        <h7>off</h7>
+                        <p>off</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -323,7 +215,7 @@ export const Home = () => {
                         marginLeft: "260px",
                         color: "black"
                     }}>
-                        <h7>03:34:04pm</h7>
+                        <p>03:34:04pm</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -332,11 +224,13 @@ export const Home = () => {
                         marginLeft: "360px",
                         color: "dodgerblue"
                     }}>
-                        <h7>Live Map</h7>
+                        <p>Live Map</p>
                     </div>
                 </div>
-                <div style={{marginBottom:"10px", border:"solid", height:"35px"
-                    , borderRadius:"6px", borderColor:"#b8b6b6"}}>
+                <div style={{
+                    marginBottom: "10px", border: "solid", height: "35px"
+                    , borderRadius: "6px", borderColor: "#b8b6b6"
+                }}>
                     <div style={{
                         display: "flex",
                         position: "absolute",
@@ -344,7 +238,7 @@ export const Home = () => {
                         marginLeft: "50px",
                         color: "black"
                     }}>
-                        <h7>12/may/2020</h7>
+                        <p>12/may/2020</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -353,7 +247,7 @@ export const Home = () => {
                         marginLeft: "160px",
                         color: "black"
                     }}>
-                        <h7>on</h7>
+                        <p>on</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -362,7 +256,7 @@ export const Home = () => {
                         marginLeft: "260px",
                         color: "black"
                     }}>
-                        <h7>03:34:04pm</h7>
+                        <p>03:34:04pm</p>
                     </div>
                     <div style={{
                         display: "flex",
@@ -371,7 +265,7 @@ export const Home = () => {
                         marginLeft: "360px",
                         color: "dodgerblue"
                     }}>
-                        <h7>Live Map</h7>
+                        <p>Live Map</p>
                     </div>
                 </div>
 
